@@ -1,0 +1,18 @@
+scalar Date
+
+type MockStudent {
+  id: String
+  name: String
+}
+
+type MockLiveSession {
+  id: String
+  sessionId: String
+  scheduledAt: Date
+  student: MockStudent
+}
+
+type Query {
+  hello: String
+  liveSessions: [MockLiveSession]
+}
